@@ -1,27 +1,33 @@
 {
-  "name": "static",
-  "version": "1.0.0",
-  "description": "This is a static template with no bundling",
-  "main": "index.html",
-  "scripts": {
-    "start": "serve",
-    "build": "echo This is a static template, there is no bundler or bundling involved!"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
-  },
-  "keywords": ["static", "template", "codesandbox"],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
-  },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
-  "devDependencies": {
-    "serve": "^11.2.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.3.1"
-  }
+	"name": "static",
+	"version": "1.0.0",
+	"description": "This is a static template with versel and parcel",
+	"scripts": {
+		"start": "serve",
+		"parcel-start": "parcel index.html",
+		"build": "echo This is a static template, there is no bundler or bundling involved!"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/codesandbox-app/static-template.git"
+	},
+	"keywords": [
+		"static",
+		"template",
+		"codesandbox"
+	],
+	"author": "Andrey Dyachenko",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/codesandbox-app/static-template/issues"
+	},
+	"homepage": "https://github.com/codesandbox-app/static-template#readme",
+	"devDependencies": {
+		"parcel": "2.0.0-rc.0",
+		"serve": "~11.2.0"
+	},
+	"dependencies": {
+		"bootstrap": "~4.6.0",
+		"jquery": "^3.6.0"
+	}
 }

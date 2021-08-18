@@ -1,0 +1,180 @@
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	height: 1em;
+	stroke: currentColor;
+	stroke-width: 0;
+	vertical-align: top;
+	width: 1em;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1168px;
+	padding-left: 16px;
+	padding-right: 16px;
+	width: 100%;
+}
+
+.container--content {
+	max-width: 1216px;
+}
+
+.faq__container {
+	padding: 16px;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-rows:
+		auto
+		32px
+		auto
+		16px
+		auto;
+	grid-template-areas:
+		'faq__title'
+		'.         '
+		'faq__aside'
+		'.         '
+		'faq__main ';
+}
+
+.faq__title {
+	grid-area: faq__title;
+	margin: 0;
+	text-align: center;
+}
+
+.faq__aside {
+	grid-area: faq__aside;
+}
+
+.faq__main {
+	grid-area: faq__main;
+}
+
+.nav-pills--custom > * {
+	margin: 8px 0;
+	margin-right: 0px;
+}
+
+.nav-pills--custom .nav-link {
+	background-color: #f9fafc;
+	color: #0a264e;
+	align-items: center;
+	border-radius: 0;
+	display: flex;
+	margin-right: 1.5em;
+	min-height: 64px;
+	padding: 19px 24px;
+	position: relative;
+}
+
+.nav-pills--custom .nav-link.active {
+	background-color: #2d78bd;
+	color: #fff;
+}
+
+.nav-pills--custom .nav-link::after {
+	background-color: #f9fafc;
+	bottom: 0;
+	-webkit-clip-path: polygon(0 0,0 100%,100% 0,0 0);
+	clip-path: polygon(0 0,0 100%,100% 0,0 0);
+	content: "";
+	left: 100%;
+	position: absolute;
+	top: 0;
+	width: 1.5em;
+}
+
+.nav-pills--custom .nav-link.active::after {
+	background-color: #2d78bd;
+}
+
+.accordion--custom .card .card-header .btn .icon-minus {
+	display: none;
+}
+
+.accordion--custom .card .card-header .btn:not(.collapsed) .icon-minus {
+	display: block;
+}
+
+.accordion--custom .card .card-header__title {
+	margin: 0;
+	padding: 0;
+}
+
+.accordion--custom .card .card-header {
+	background-color: #fff;
+	display: block;
+	padding: 0;
+}
+
+.accordion--custom .card .card-header .btn {
+	color: #0a264e;
+	align-items: center;
+	display: flex;
+	min-height: 64px;
+	padding: 16px 16px;
+	width: 100%;
+}
+
+.accordion--custom .card .card-header .btn:focus {
+	box-shadow: none;
+}
+
+.accordion--custom .card .card-header .btn:not(:empty) {
+	padding: 16px 8px;
+}
+
+.accordion--custom .card .card-header .btn__text {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.accordion--custom .card .card-header .btn__icon {
+	color: #2d78bd;
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+}
+
+.accordion--custom .card .card-header .btn:not(.collapsed) .icon-plus {
+	display: none;
+}
+
+.accordion--custom .card .card-header .btn:not(.collapsed) .icon-minus {
+	display: block;
+}
+
+.accordion--custom .card .card-header .btn > * {
+	margin: 0 8px;
+}
+
+@media (min-width: 768px) {
+	.faq__container {
+		grid-auto-flow: column;
+		grid-template-rows:
+			auto
+			32px
+			auto;
+		grid-template-columns: 1fr 16px 3fr;
+		grid-template-areas:
+			'faq__title faq__title faq__title'
+			'.          . .                  '
+			'faq__aside . faq__main          ';
+	}
+}
