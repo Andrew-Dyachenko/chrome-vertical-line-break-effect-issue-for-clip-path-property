@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
 	<meta charset="UTF-8" />
@@ -36,9 +36,9 @@
 		</defs>
 	</svg>
 	<div class="faq">
-		<div class="container faq__container container--content">
+		<div class="container faq__container container--content" id="faq__container">
 			<h1 class="faq__title">Chrome vertical line break effect issue for clip-path property</h1>
-			<aside class="faq__aside">
+			<aside class="aside faq__aside">
 				<div class="nav flex-column nav-pills nav-pills--custom" id="v-faq-pills-tab" role="tablist"
 					aria-orientation="vertical">
 					<a class="nav-link active" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-about"
@@ -61,7 +61,7 @@
 					</a>
 				</div>
 			</aside>
-			<main class="faq__main">
+			<main class="main faq__main">
 				<div class="tab-content tab-content--custom" id="v-faq-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-about" role="tabpanel"
 						aria-labelledby="v-pills-about-tab">
@@ -72,7 +72,7 @@
 										<button class="btn btn-link" type="button" data-toggle="collapse"
 											data-target="#faq-collapse--1" aria-expanded="true"
 											aria-controls="faq-collapse--1">
-											<span class="btn__text">What is Share CFD?</span>
+											<span class="btn__text">What is Share CFD ?</span>
 											<span class="btn__icon">
 												<svg class="icon icon-plus" xmlns:xlink="http://www.w3.org/1999/xlink">
 													<use xlink:href="#icon-plus"></use>
@@ -87,7 +87,7 @@
 								<div class="collapse show" id="faq-collapse--1"
 									aria-labelledby="faq-accordion-heading--1" data-parent="#faq-accordion">
 									<div class="card-body">
-										<h3 class="card-title">What is Share CFD?</h3>
+										<h3 class="card-title">What is Share CFD ?</h3>
 										<p class="card-text">
 											Answer: Share is considered as a type of securities. And each company will
 											let those interested to hold shares in order for the company to raise funds
@@ -107,7 +107,7 @@
 											data-target="#faq-collapse--2" aria-expanded="false"
 											aria-controls="faq-collapse--2">
 											<span class="btn__text">
-												What is index stocks (indexes)?
+												What is index stocks (indexes) ?
 											</span>
 											<span class="btn__icon">
 												<svg class="icon icon-plus" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -123,7 +123,7 @@
 								<div class="collapse" id="faq-collapse--2" aria-labelledby="faq-accordion-heading--2"
 									data-parent="#faq-accordion">
 									<div class="card-body">
-										<h3 class="card-title">What is index stocks (indexes)?</h3>
+										<h3 class="card-title">What is index stocks (indexes) ?</h3>
 										<p class="card-text">
 											Answer: Indexes are a combination of many stocks. The common characteristic
 											that the numbers will reflect the stock price referenced by that index, such
@@ -140,7 +140,7 @@
 										<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
 											data-target="#faq-collapse--3" aria-expanded="false"
 											aria-controls="faq-collapse--3">
-											<span class="btn__text">What is commodities?</span>
+											<span class="btn__text">What is commodities ?</span>
 											<span class="btn__icon">
 												<svg class="icon icon-plus" xmlns:xlink="http://www.w3.org/1999/xlink">
 													<use xlink:href="#icon-plus"></use>
@@ -155,7 +155,7 @@
 								<div class="collapse" id="faq-collapse--3" aria-labelledby="faq-accordion-heading--3"
 									data-parent="#faq-accordion">
 									<div class="card-body">
-										<h3 class="card-title">What is commodities?</h3>
+										<h3 class="card-title">What is commodities ?</h3>
 										<p class="card-text">
 											Answer: For financial markets, Commodities means homogenization of products,
 											trading easily and popular, used as the main raw material for production in
@@ -174,7 +174,7 @@
 											data-target="#faq-collapse--4" aria-expanded="false"
 											aria-controls="faq-collapse--4">
 											<span class="btn__text">
-												What is Forex?
+												What is Forex ?
 											</span>
 											<span class="btn__icon">
 												<svg class="icon icon-plus" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -190,7 +190,7 @@
 								<div class="collapse" id="faq-collapse--4" aria-labelledby="faq-accordion-heading--4"
 									data-parent="#faq-accordion">
 									<div class="card-body">
-										<h3 class="card-title">What is Forex?</h3>
+										<h3 class="card-title">What is Forex ?</h3>
 										<p class="card-text">
 											Answer: Forex (or Forex / FX) refers to foreign currencies such as US
 											Dollars, Euros, Japanese Yen, etc. These currencies are internationally
@@ -224,6 +224,27 @@
 					</div>
 				</div>
 			</main>
+			<form class="control-panel faq__control-panel" dir="ltr" id="faq__control-panel">
+				<div class="input-group justify-content-center align-items-center">
+					<div class="custom-control custom-checkbox custom-control-inline">
+						<input type="checkbox" class="custom-control-input" id="animation-toggle">
+						<label class="custom-control-label" for="animation-toggle">
+							Animation (Shows the bug)
+						</label>
+					</div>
+					<div class="custom-control custom-checkbox custom-control-inline">
+						<input type="checkbox" class="custom-control-input" id="ltr-rtl-toggle">
+						<label class="custom-control-label" for="ltr-rtl-toggle">
+							RTL
+						</label>
+					</div>
+					<div class="custom-control custom-checkbox custom-control-inline">
+						<button type="button" class="btn btn-sm btn-warning align-items-center d-inline-flex" id="remove-local-storage-item">
+							Clear this state &#128465;
+						</button>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </body>
