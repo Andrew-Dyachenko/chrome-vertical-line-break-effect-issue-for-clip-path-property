@@ -56,12 +56,14 @@ window.addEventListener('load', function pageIsFullyLoaded () {
 	}
 	else {
 		const { animate, dir } = getLocalStorage();
+		animationControl.checked = animate;
 		toggleAnimation(animate);
-		toggleDir(dir);
+		dirControl.checked = (dir === 'rtl');
+		toggleDir(dir === 'rtl');
 	}
 
 	dirControl.onchange = function dirControlOnChange() {
-		setLocalStorage(storageName, {dir: this.checked})
+		setLocalStorage(storageName, {dir: this.checked ? 'rtl' : 'ltr'})
 		return toggleDir(this.checked)
 	};
 
