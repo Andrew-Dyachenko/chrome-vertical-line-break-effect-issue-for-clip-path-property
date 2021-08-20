@@ -134,7 +134,7 @@ body {
 }
 
 .nav-pills--custom .nav-link {
-	background-color: #f9fafc;
+	background-color: #e3e3e3;
 	color: #0a264e;
 	align-items: center;
 	border-radius: 0;
@@ -156,7 +156,7 @@ body {
 }
 
 .nav-pills--custom .nav-link::after {
-	background-color: #f9fafc;
+	background-color: #e3e3e3;
 	bottom: 0;
 	-webkit-clip-path: polygon(0 0, 0 100%, 100% 0, 0 0);
 	clip-path: polygon(0 0, 0 100%, 100% 0, 0 0);
